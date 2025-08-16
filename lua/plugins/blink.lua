@@ -14,5 +14,8 @@ return {
       ["<CR>"] = { "fallback" },
       ["<Tab>"] = { "accept", "fallback" },
     },
+    fuzzy = {
+      implementation = "lua",
+    },
   },
 }
