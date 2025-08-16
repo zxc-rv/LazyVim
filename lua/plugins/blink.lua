@@ -11,7 +11,7 @@ return {
     },
     keymap = {
       preset = "default",
-      ["<CR>"] = { "fallback" },
+      ["<CR>"] = { "accept", "fallback" },
       ["<Tab>"] = { "accept", "fallback" },
     },
     fuzzy = {
