@@ -5,7 +5,11 @@ Refer to the [documentation](https://lazyvim.github.io/installation) to get star
 
 
 Install for Windows:
-```git clone https://github.com/zxc-rv/LazyVim $env:LOCALAPPDATA\nvim```
+```
+git clone https://github.com/zxc-rv/LazyVim $env:LOCALAPPDATA\nvim
+```
 
 Install for Linux:
-```git clone https://github.com/zxc-rv/LazyVim ~/.config/nvim```
+```
+git clone https://github.com/zxc-rv/LazyVim ~/.config/nvim
+```
