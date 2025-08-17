@@ -7,6 +7,7 @@ return {
   config = function()
     require("telescope").setup({
       defaults = {
+        path_display = { "absolute" },
         layout_strategy = "vertical",
         layout_config = {
           width = 0.7,
