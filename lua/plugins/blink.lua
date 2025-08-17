@@ -15,7 +15,7 @@ return {
       ["<Tab>"] = { "accept", "fallback" },
     },
     fuzzy = {
-      implementation = "lua",
+      implementation = "prefer_rust",
     },
   },
 }
