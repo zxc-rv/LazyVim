@@ -21,14 +21,14 @@ return {
             desc = "Find File",
             action = function()
               if vim.fn.has("win32") == 1 then
-                Snacks.dashboard.pick("files", {
+                require("telescope.builtin").find_files({
                   search_dirs = {
                     vim.fn.expand("$USERPROFILE"),
                     "S:/Github",
                   },
                 })
               else
-                Snacks.dashboard.pick("files", {
+                require("telescope.builtin").find_files({
                   cwd = "/",
                   find_command = {
                     "find",
