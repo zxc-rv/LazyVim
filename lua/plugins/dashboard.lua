@@ -82,59 +82,7 @@ return {
             key = "r",
             desc = "Recent Files",
             action = function()
-              if vim.fn.has("win32") == 1 then
-                Snacks.dashboard.pick("oldfiles", {
-                  search_dirs = {
-                    vim.fn.expand("$USERPROFILE"),
-                    "S:/Github/",
-                  },
-                })
-              else
-                Snacks.dashboard.pick("oldfiles", {
-                  cwd = "/",
-                  find_command = {
-                    "find",
-                    "/",
-                    "-maxdepth",
-                    "5",
-                    "-type",
-                    "f",
-                    "-not",
-                    "-path",
-                    "/dev/*",
-                    "-not",
-                    "-path",
-                    "/sys/*",
-                    "-not",
-                    "-path",
-                    "/proc/*",
-                    "-not",
-                    "-path",
-                    "/boot/*",
-                    "-not",
-                    "-path",
-                    "/run/*",
-                    "-not",
-                    "-path",
-                    "/bin/*",
-                    "-not",
-                    "-path",
-                    "/sbin/*",
-                    "-not",
-                    "-path",
-                    "/lib/*",
-                    "-not",
-                    "-path",
-                    "/mnt/*",
-                    "-not",
-                    "-path",
-                    "/srv/*",
-                    "-not",
-                    "-path",
-                    "/tmp/*",
-                  },
-                })
-              end
+              require("telescope.builtin").oldfiles()
             end,
           },
           {
