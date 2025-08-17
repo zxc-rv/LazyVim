@@ -36,6 +36,7 @@ return {
                     "f",
                     "--max-depth",
                     "5",
+                    "--absolute-path",
                     "--exclude",
                     "dev",
                     "--exclude",
